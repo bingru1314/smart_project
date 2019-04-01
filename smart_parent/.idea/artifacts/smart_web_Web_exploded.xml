@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="smart_web:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/smart_web_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="smart_web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="smart_web" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
