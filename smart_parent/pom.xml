@@ -17,7 +17,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    </properties> 
+	
+	<!--1111-->
     <build>
         <outputDirectory>C:\Users\Administrator\IdeaProjects\smart_parent\smart_web\src\main\webapps\WEB-INF\classes</outputDirectory>
         <testOutputDirectory>C:\Users\Administrator\IdeaProjects\smart_parent\smart_web\src\main\webapps\WEB-INF\classes</testOutputDirectory>
