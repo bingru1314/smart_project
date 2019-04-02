@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
 
 /**
  * 反射工具类
+ * @version 1.0
  */
 public class ReflectionUtil {
     private static final Logger log = LoggerFactory.getLogger(ReflectionUtil.class);
@@ -25,7 +26,7 @@ public class ReflectionUtil {
             log.error("new Instance failure",e);
             throw new RuntimeException(e);
         }
-        return null;
+        return obj;
     }
 
     /**

@@ -2,6 +2,7 @@ package com.smart.frame.util;
 
 /**
  * 转型操作工具类
+ * @version 1.0
  */
 public final class CastUtil {
     /**

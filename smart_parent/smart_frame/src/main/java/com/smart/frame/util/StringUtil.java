@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /**
  * 字符串工具类
+ * @version 1.0
  */
 public final class StringUtil {
     /**
@@ -25,5 +26,15 @@ public final class StringUtil {
      */
     public static boolean isNotEmpty(String str){
         return !isEmpty(str);
+    }
+
+    /**
+     * 根据字符分割字符串
+     * @param str
+     * @param separt
+     * @return
+     */
+    public static String[] splitString(String str,String separt){
+        return StringUtils.split(str,separt);
     }
 }

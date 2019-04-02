@@ -16,6 +16,7 @@ import java.util.jar.JarFile;
 
 /**
  * 类操作工具类
+ * @version 1.0
  */
 public final class ClassUtil {
     private final static Logger log = LoggerFactory.getLogger(ClassUtil.class);

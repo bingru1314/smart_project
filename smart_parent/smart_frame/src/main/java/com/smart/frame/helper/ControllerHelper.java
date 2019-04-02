@@ -32,7 +32,7 @@ public final class ControllerHelper {
                             if(mapping.matches("\\w+:/\\w*")){
                                 String[] requestHanderArray = mapping.split(":");
                                 if(ArrayUtil.isNotEmpty(requestHanderArray) && requestHanderArray.length == 2){
-                                    String requestMethod = requestHanderArray[0];
+                                    String requestMethod = requestHanderArray[0].toLowerCase();
                                     String requestPath = requestHanderArray[1];
                                     Request request = new Request(requestMethod,requestPath);
                                     Handler handler = new Handler(controllerClass,method);
