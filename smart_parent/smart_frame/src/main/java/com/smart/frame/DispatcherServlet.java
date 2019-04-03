@@ -98,9 +98,9 @@ public class DispatcherServlet extends HttpServlet {
                         for(Map.Entry<String,Object> entry:model.entrySet()){
                             req.setAttribute(entry.getKey(),entry.getValue());
                         }
-                        System.out.println(ConfigHelper.getAppJspPath()+path);
-                        req.getRequestDispatcher("/WEB-INF/jsp/hellow.jsp").forward(req,resp);
-                        //req.getRequestDispatcher(ConfigHelper.getAppJspPath()+path).forward(req,resp);
+                        //System.out.println(ConfigHelper.getAppJspPath()+path);
+                        //req.getRequestDispatcher("/WEB-INF/jsp/hellow.jsp").forward(req,resp);
+                        req.getRequestDispatcher(ConfigHelper.getAppJspPath()+path).forward(req,resp);
                     }
                 }
             }else if(result instanceof Data){

@@ -55,9 +55,12 @@ public final class ClassUtil {
         Set<Class<?>> classsSet = new HashSet<Class<?>>();
         Enumeration<URL> urls;
         try {
+            //urls=getClassLoader().getResources(packageName.replace(".","/"));
+
             urls=getClassLoader().getResources(packageName.replace(".","/"));
             while(urls.hasMoreElements()){
                 URL url = urls.nextElement();
+                System.out.println(url.getPath());
                 if(url != null){
                     String protocol = url.getProtocol();
                     if(protocol.equals("file")){
